@@ -30,6 +30,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../style/variables.scss';
+
     header {
         height: 100px;
         font-size: 10px;
@@ -49,8 +51,8 @@ export default {
                     line-height: 100px;
                     
                     &.current {
-                        color: blue;
-                        border-bottom: 3px solid blue;
+                        color: $primary_color;
+                        border-bottom: 3px solid $primary_color;
                     }
                 }
             }

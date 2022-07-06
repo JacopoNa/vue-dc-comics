@@ -13,10 +13,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../style/variables.scss';
 
     .content {
         background-color: #1c1c1c;
-        color: white;
+        color: $secondary_color;
         padding: 40px 0;
     }
 </style>
