@@ -46,6 +46,7 @@ export default {
         .menu {
 
             ul {
+                display: flex;
                 li{
                     margin: 0 13px;
                     line-height: 100px;
