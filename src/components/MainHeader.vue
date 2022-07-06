@@ -7,16 +7,9 @@
 
             <div class="menu">
                 <ul>
-                    <li>CHARACTERS</li>
-                    <li class="current">COMICS</li>
-                    <li>MOVIES</li>
-                    <li>TV</li>
-                    <li>GAMES</li>
-                    <li>COLLECTIBLES</li>
-                    <li>VIDEOS</li>
-                    <li>FANS</li>
-                    <li>NEWS</li>
-                    <li>SHOP</li>
+                    <li v-for="(element,index) in menuList" :key="index" :class="{ 'current' : element.status === true}">
+                        {{ element.text }}
+                    </li>
                 </ul>
             </div>
         </div>
@@ -25,7 +18,54 @@
 
 <script>
 export default {
-    name: 'MainHeader'
+    name: 'MainHeader',
+    data() {
+        return {
+            menuList: [
+            {
+                text: 'CHARACTERS',
+                status: false
+            },
+            {
+                text: 'COMICS',
+                status: true
+            },
+             {
+                text: 'MOVIES',
+                status: false
+            },
+             {
+                text: 'TV',
+                status: false
+            },
+             {
+                text: 'GAMES',
+                status: false
+            },
+             {
+                text: 'COLLECTIBLES',
+                status: false
+            },
+             {
+                text: 'VIDEOS',
+                status: false
+            },
+             {
+                text: 'FANS',
+                status: false
+            },
+             {
+                text: 'NEWS',
+                status: false
+            },
+             {
+                text: 'SHOP',
+                status: false
+            }
+        ]
+        }
+        
+    }
 }
 </script>
 
