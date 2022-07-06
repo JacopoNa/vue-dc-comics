@@ -56,7 +56,31 @@
 
         <div class="footer-bottom">
             <div class="container">
-                sign
+                <div class="sign">
+                    <div>SIGN-UP NOW!</div>
+                </div>
+
+                <div class="socials">
+                    <ul>
+                        <li class="follow">FOLLOW US</li>
+                        <li>
+                            <img src="../assets/img/footer-facebook.png" alt="socials">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-twitter.png" alt="socials">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-youtube.png" alt="socials">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-periscope.png" alt="socials">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-pinterest.png" alt="socials">
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
@@ -105,5 +129,34 @@ export default {
                 }
             }
         }
+        .footer-bottom {
+            height: 100px;
+            background-color: #303030;
+
+            .sign {
+                div {
+                    color: $secondary_color;
+                    background-color: #303030;
+                    border: 2px solid $primary_color;
+                    padding: 10px;
+                }
+            }
+            .socials {
+
+                ul {
+                    display: flex;
+                    align-items: center;
+    
+                    li {
+                        margin: 10px;
+
+                        &.follow {
+                            color: $primary_color;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
         }
+    }
 </style>
